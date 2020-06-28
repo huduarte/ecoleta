@@ -51,6 +51,15 @@ form fieldset {
 
 form legend{
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 100%;
+}
+form legend span{
+    font-size: 14px;
+    color: var(--title-color);
+    
 }
 
 form legend h2{
@@ -92,6 +101,7 @@ form label{
     font-size: 14px;
     margin-bottom: 8px;
 }
+
 
 form .field-group .field + .field{
     /*separação de dois campos com flex*/
