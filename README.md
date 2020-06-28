@@ -15,4 +15,4 @@ Aprender sobre conceitos de html, css, javascript, nodejs e banco de dados.
 
 Foto | Nome | GitHub | Likedin | E-mail
 ---- | ---- | ------ | ------- | ------
-<img src="./docs/foto.jpeg" width="100px">  | Hudson Duarte | [Hudson Duarte](https://github.com/huduarte) | [Linkedin](https://www.linkedin.com/in/hudson-duarte-345107186/) | hudsoneeto@outlook.com
+<img src="./foto/foto.jpeg" width="100px">  | Hudson Duarte | [Hudson Duarte](https://github.com/huduarte) | [Linkedin](https://www.linkedin.com/in/hudson-duarte-345107186/) | hudsoneeto@outlook.com
