@@ -9,7 +9,7 @@ Aprender sobre conceitos de html, css, javascript, nodejs e banco de dados.
 -HTML
 -CSS
 -JS
--mysql
+-Sqlite
 
 **Autores**
 
