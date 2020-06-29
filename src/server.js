@@ -1,11 +1,11 @@
 const express = require("express")
 const server = express()
 
+//pegar o banco de dados
+const db = require("./database/db")
 
 //configurar pasta pública
 server.use(express.static("public"))
-
-
 
 // utilizando template engine
 const nunjucks = require("nunjucks")
@@ -24,11 +24,30 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
+    
+    //req.query: Query Strings da nossa url
+    console.log(req.query)
+
     return res.render("create-point.html")
 })
 
 server.get("/search-results", (req, res) => {
-    return res.render("search-results.html")
+
+    //pegar os dados do banco de dados
+    db.all(`SELECT * FROM places`, function(err, rows){
+       if (err){
+            return console.log(err)
+        }
+        const total = rows.length
+
+        //console.log("Aqui estão seus registros")
+        //console.log(rows)
+
+        // mostrar a pagia html com os dados do banco de dados
+        return res.render("search-results.html", { places: rows, total: total})
+    })
+
+
 })
 
 //ligar o servidor
