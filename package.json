@@ -2,7 +2,7 @@
   "name": "Ecoleta",
   "version": "1.0.0",
   "description": "Projeto desenvolvido na NLW#1",
-  "main": "src/views/index.html",
+  "main": "src/server.js",
   "scripts": {
     "start": "nodemon src/server.js"
   },
