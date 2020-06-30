@@ -12,7 +12,7 @@ server.use(express.urlencoded({ extended: true }))
 
 // utilizando template engine
 const nunjucks = require("nunjucks")
-nunjucks.configure("index/views", {
+nunjucks.configure("src/views", {
     express: server, 
     noCache: true
 })
